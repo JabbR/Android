@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SlidingPaneLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/splMain">
+    
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    xmlns:tools="http://schemas.android.com/tools"
+	    android:layout_width="wrap_content"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical" >
+		
+
+	    <ListView	
+	        android:layout_width="match_parent"
+			android:layout_height="0dip"
+	        android:id="@+id/lvMessages"
+	        android:divider="#CCCCCC"
+	        android:layout_weight="1"
+	   		android:dividerHeight="1dp" />
+
+	   
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+			android:padding="1dp">
+	
+	        <EditText
+	            android:id="@+id/etPost"
+	            android:paddingRight="2dp"
+	            android:layout_width="0dip"
+	            android:layout_height="match_parent"            
+	            android:layout_weight="1"
+	            android:ems="10"
+	            android:hint="@string/Message"
+	            android:imeActionId="@+id/send"
+	            android:imeActionLabel="@string/send"
+	            android:imeOptions="actionUnspecified"
+	            android:maxLines="1"
+	            android:singleLine="true"
+	            android:background="@drawable/editboxborder">
+	
+	            <requestFocus />
+	        </EditText>
+	        
+	
+	        <Button
+	            android:id="@+id/send_button"
+	            android:layout_width="wrap_content"
+	            android:layout_height="match_parent"
+	            android:text="@string/send"
+	            android:background="#00103F"
+				android:textColor="#FFFFFF" 
+				android:paddingLeft="2dp"
+				android:paddingRight="2dp" />
+	    </LinearLayout>
+	
+	</LinearLayout>
+	
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+	    <LinearLayout 
+		    android:layout_width="match_parent"
+		    android:layout_height="50dp"
+			android:background="#EEEEEE"
+			android:paddingLeft="10dp">
+			<TextView
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent" 
+				android:text="@string/room_owners"
+				android:gravity="center_vertical"
+				android:textSize="14sp"
+				android:textColor="#007FFF"
+				android:textStyle="bold"
+				android:layout_gravity="center"/>
+        </LinearLayout>	
+		<ListView
+		    android:id="@+id/lvRoomOwners"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content">
+		</ListView>
+		<LinearLayout 
+		    android:layout_width="match_parent"
+		    android:layout_height="50dp"
+			android:background="#EEEEEE"
+			android:paddingLeft="10dp">
+			<TextView
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent" 
+				android:text="@string/room_users"
+				android:gravity="center_vertical"
+				android:textSize="14sp"
+				android:textColor="#007FFF"
+				android:textStyle="bold"
+				android:layout_gravity="center"/>
+        </LinearLayout>	
+		<ListView
+		    android:id="@+id/lvRoomUsers"
+		    android:layout_width="wrap_content"
+		    android:layout_height="match_parent">
+		</ListView>	
+	</LinearLayout>
+</android.support.v4.widget.SlidingPaneLayout>

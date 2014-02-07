@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Jabbr for Android</string>
+    <string name="fieldUsername">Username</string>
+    <string name="fieldLogin">Login</string>
+    <string name="usernamehint">Username</string>
+    <string name="passwordfield">Password</string>
+    <string name="roomslobby">Rooms Lobby</string>
+    <string name="title_activity_room_lobby">RoomLobbyActivity</string>
+    <string name="title_activity_room">RoomActivity</string>
+    <string name="logout">Logout</string>
+    <string name="send">Send</string>
+    <string name="Message">Message</string>
+    <string name="userGravatar">User Gravatar</string>
+    <string name="room_users">Room Users</string>
+    <string name="JABBRSettings">JABBRSettings</string>
+    <string name="CookieKey">CookieKey</string>
+    <string name="action_signin">Sign In</string>
+    <string name="room_owners">Room Owners</string>
+    <string name="login_error">Error trying to log in: </string>
+    <string name="server_url">Server URL</string>
+    <string name="default_server_url">https://jabbr.net/</string>
+</resources>
