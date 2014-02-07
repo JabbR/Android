@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="1dp" >
+
+    <ImageView
+        android:id="@+id/ivRoomUserGravatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="1dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="1dp"
+        android:paddingTop="1dp" />
+
+    <TextView
+        android:id="@+id/tvRoomUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:textSize="12sp" />
+
+</LinearLayout>

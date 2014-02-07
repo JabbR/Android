@@ -1,0 +1,138 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".LoginActivity" >
+
+    <!-- Login progress -->
+
+    <LinearLayout
+        android:id="@+id/login_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/login_status_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/login_progress_signing_in"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+
+    <!-- Login form -->
+
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"> 
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            
+			<LinearLayout
+			  	android:layout_height="120dp"
+			  	android:layout_width="match_parent"
+				android:orientation="horizontal"
+				android:background="#00103F"
+				android:paddingLeft="30dp"
+			 >
+
+	            <ImageView
+	                android:id="@+id/imageView1"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:background="#00103F"
+	                android:contentDescription="@string/fieldLogin"
+	                android:src="@drawable/logo" 
+	                android:layout_gravity="center_vertical"/>
+
+			</LinearLayout>
+
+			<TextView 
+	                android:id="@+id/tvError"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+		            android:paddingTop="20dp"
+					android:visibility="invisible"
+					android:textColor="#EF0000"
+					android:textSize="15sp"
+					android:gravity="center_horizontal|center_vertical"
+			    />
+			
+			<LinearLayout
+	            style="@style/LoginFormContainer"
+	            android:layout_width="250dp"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical"
+	            android:paddingTop="30dp"
+				android:layout_gravity="center_horizontal">	
+	            
+				<EditText
+	                android:id="@+id/evUser"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_marginTop="16dp"
+	                android:hint="@string/usernamehint"
+	                android:inputType="textEmailAddress"
+	                android:maxLines="1"
+	                android:singleLine="true"
+	                android:paddingLeft="5dp"
+	                android:paddingRight="5dp"
+	                android:paddingTop="5dp"
+	                android:paddingBottom="5dp"
+	                android:background="@drawable/editboxborder" />
+	
+	            <EditText
+	                android:id="@+id/password"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_marginTop="16dp"
+	                android:hint="@string/prompt_password"
+	                android:imeActionId="@+id/login"
+	                android:imeActionLabel="@string/action_sign_in_short"
+	                android:imeOptions="actionUnspecified"
+	                android:inputType="textPassword"
+	                android:maxLines="1"
+	                android:singleLine="true"
+	                android:background="@drawable/editboxborder"
+	                android:paddingLeft="5dp"
+	                android:paddingRight="5dp"
+	                android:paddingTop="5dp"
+	                android:paddingBottom="5dp" />
+	
+	            <Button
+	                android:id="@+id/sign_in_button"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_gravity="right"
+	                android:layout_marginTop="16dp"
+	                android:paddingLeft="32dp"
+	                android:paddingRight="32dp"
+	                android:paddingTop="2dp"
+	                android:paddingBottom="2dp"
+	                android:text="@string/action_signin"
+	                android:background="#00103F"
+	                android:textColor="#FFFFFF" />
+	
+	        </LinearLayout>
+
+     	</LinearLayout>
+
+    </ScrollView>
+
+</merge>
